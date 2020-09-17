@@ -14,6 +14,8 @@
 		451E685C2509037D00846646 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451E685B2509037D00846646 /* Preview Assets.xcassets */; };
 		451E685F2509037D00846646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451E685D2509037D00846646 /* LaunchScreen.storyboard */; };
 		451E6867250A2F1F00846646 /* TwoViewResizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451E6866250A2F1F00846646 /* TwoViewResizeView.swift */; };
+		453B0CA0250F86A20035CBE9 /* TwoViewResizeTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */; };
+		45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		451E685E2509037D00846646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451E68602509037D00846646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451E6866250A2F1F00846646 /* TwoViewResizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewResizeView.swift; sourceTree = "<group>"; };
+		453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewResizeTapView.swift; sourceTree = "<group>"; };
+		45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "advanced-swiftui-animations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXGroup;
 			children = (
 				451E6866250A2F1F00846646 /* TwoViewResizeView.swift */,
+				453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */,
+				45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */,
 				451E68512509037400846646 /* testGesture2 */,
 				451E68502509037400846646 /* Products */,
 			);
@@ -149,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453B0CA0250F86A20035CBE9 /* TwoViewResizeTapView.swift in Sources */,
 				451E6867250A2F1F00846646 /* TwoViewResizeView.swift in Sources */,
 				451E68532509037400846646 /* AppDelegate.swift in Sources */,
 				451E68552509037400846646 /* SceneDelegate.swift in Sources */,
+				45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */,
 				451E68572509037400846646 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

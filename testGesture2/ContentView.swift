@@ -21,10 +21,75 @@ struct ContentView: View {
     
 
 
-    
+    @State private var fTwoView = false
+    @State private var fTwoTapeView = false
+    @State private var animationView = false
+
     var body: some View {
 
-        TwoViewResizeView()
+        ZStack {
+            VStack {
+                Text("Hello World")
+                Button(action: {
+                    //go to another view
+                    self.fTwoView.toggle()
+                }) {
+                    Text("TwoViewResizeView")
+                        .font(.largeTitle)
+                        .fontWeight(.ultraLight)
+                }
+
+                Button(action: {
+                    //go to another view
+                    self.fTwoTapeView.toggle()
+                }) {
+                    Text("TwoViewResizeTapeView")
+                        .font(.largeTitle)
+                        .fontWeight(.ultraLight)
+                }
+
+                Button(action: {
+                    //go to another view
+                    self.animationView.toggle()
+                }) {
+                    Text("animationView")
+                        .font(.largeTitle)
+                        //.fontWeight(.ultraLight)
+                }
+                
+                Text("kk")
+                    .border(Color.black)
+                    .background(
+                        Color.yellow
+                    )
+                
+            }
+            
+            if fTwoView {
+                BottomView(showMe : $fTwoView){
+                    TwoViewResizeView()
+                    //swiftuiAnimations()
+                }
+            }
+            
+            if fTwoTapeView {
+                BottomView(showMe : $fTwoTapeView){
+                    TwoViewResizeTapView()
+                    //swiftuiAnimations()
+                }
+            }
+            
+            if animationView {
+                BottomView(showMe : $animationView){
+                    //TwoViewResizeView()
+                    swiftuiAnimations()
+                }
+            }
+            
+            
+        
+        }
+        
 
         
         
@@ -44,6 +109,27 @@ struct ContentView: View {
     }
 }
 
+
+struct BottomView<Content: View>: View {
+    @Binding var showMe : Bool
+    
+    var content: () -> Content
+    
+    
+    var body: some View {
+        ZStack {
+            content()
+            Rectangle()
+                .fill(Color.orange)
+                .frame(width: 50, height: 50)
+                .position(x: 25, y: 25)
+                .onTapGesture {
+                    self.showMe.toggle()
+            }
+        }
+    }
+    
+}
 
 struct DragView: View {
     var body: some View {

@@ -12,7 +12,9 @@ struct TwoViewResizeView: View {
     
     let bandY : CGFloat = 500
     let bandH : CGFloat = 30
+    
 
+    let bandKeyboard : CGFloat = 500
     
     @State private var dragOffset: CGSize = .zero
     @State private var doneOffset: CGSize = .zero
@@ -66,6 +68,8 @@ struct TwoViewResizeView: View {
                         }
                     )
             
+            Text("the past is in the past")
+            
            }
 
         }
@@ -75,6 +79,7 @@ struct TwoViewResizeView: View {
 struct keyboardView : View {
     
     var body: some View {
+        
         VStack (spacing: 10) {
             HStack (spacing: 10) {
                 Circle()
@@ -151,6 +156,11 @@ struct keyboardView : View {
             }
             .frame(maxHeight: .infinity)
         }
+        .padding(.horizontal)
+        .padding(.top, 10)
+        .padding(.bottom, 10)
+            
+        .background(Rectangle().foregroundColor(Color.black))
     }
     
 }
