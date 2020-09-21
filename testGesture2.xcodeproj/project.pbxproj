@@ -14,7 +14,11 @@
 		451E685C2509037D00846646 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451E685B2509037D00846646 /* Preview Assets.xcassets */; };
 		451E685F2509037D00846646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451E685D2509037D00846646 /* LaunchScreen.storyboard */; };
 		451E6867250A2F1F00846646 /* TwoViewResizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451E6866250A2F1F00846646 /* TwoViewResizeView.swift */; };
+		45349DBD251371D8000310DF /* AlignmentGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45349DBC251371D8000310DF /* AlignmentGuides.swift */; };
 		453B0CA0250F86A20035CBE9 /* TwoViewResizeTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */; };
+		453F9C552517393F0097080B /* CFTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C542517393F0097080B /* CFTimerView.swift */; };
+		453F9C58251739520097080B /* HalfModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C57251739520097080B /* HalfModalView.swift */; };
+		453F9C5B2518A9ED0097080B /* ColorISystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C5A2518A9ED0097080B /* ColorISystemView.swift */; };
 		45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +32,11 @@
 		451E685E2509037D00846646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451E68602509037D00846646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451E6866250A2F1F00846646 /* TwoViewResizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewResizeView.swift; sourceTree = "<group>"; };
+		45349DBC251371D8000310DF /* AlignmentGuides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuides.swift; sourceTree = "<group>"; };
 		453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewResizeTapView.swift; sourceTree = "<group>"; };
+		453F9C542517393F0097080B /* CFTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFTimerView.swift; sourceTree = "<group>"; };
+		453F9C57251739520097080B /* HalfModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalView.swift; sourceTree = "<group>"; };
+		453F9C5A2518A9ED0097080B /* ColorISystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorISystemView.swift; sourceTree = "<group>"; };
 		45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "advanced-swiftui-animations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +54,7 @@
 		451E68462509037400846646 = {
 			isa = PBXGroup;
 			children = (
+				453F9C532517384D0097080B /* CFTimer */,
 				451E6866250A2F1F00846646 /* TwoViewResizeView.swift */,
 				453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */,
 				45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */,
@@ -68,6 +77,8 @@
 				451E68522509037400846646 /* AppDelegate.swift */,
 				451E68542509037400846646 /* SceneDelegate.swift */,
 				451E68562509037400846646 /* ContentView.swift */,
+				453F9C5A2518A9ED0097080B /* ColorISystemView.swift */,
+				45349DBC251371D8000310DF /* AlignmentGuides.swift */,
 				451E68582509037D00846646 /* Assets.xcassets */,
 				451E685D2509037D00846646 /* LaunchScreen.storyboard */,
 				451E68602509037D00846646 /* Info.plist */,
@@ -82,6 +93,15 @@
 				451E685B2509037D00846646 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		453F9C532517384D0097080B /* CFTimer */ = {
+			isa = PBXGroup;
+			children = (
+				453F9C57251739520097080B /* HalfModalView.swift */,
+				453F9C542517393F0097080B /* CFTimerView.swift */,
+			);
+			path = CFTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +176,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				453B0CA0250F86A20035CBE9 /* TwoViewResizeTapView.swift in Sources */,
+				453F9C58251739520097080B /* HalfModalView.swift in Sources */,
+				453F9C552517393F0097080B /* CFTimerView.swift in Sources */,
+				45349DBD251371D8000310DF /* AlignmentGuides.swift in Sources */,
 				451E6867250A2F1F00846646 /* TwoViewResizeView.swift in Sources */,
 				451E68532509037400846646 /* AppDelegate.swift in Sources */,
 				451E68552509037400846646 /* SceneDelegate.swift in Sources */,
 				45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */,
 				451E68572509037400846646 /* ContentView.swift in Sources */,
+				453F9C5B2518A9ED0097080B /* ColorISystemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

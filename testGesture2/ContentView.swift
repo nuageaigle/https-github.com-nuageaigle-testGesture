@@ -20,78 +20,73 @@ struct ContentView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
     
 
-
     @State private var fTwoView = false
     @State private var fTwoTapeView = false
     @State private var animationView = false
-
+    
+    @State private var openIndex : Int = 0
+    @State private var openView = false
+    
+    var colors = ["TwoViewResizeView", "TwoViewResizeTapeView", "animationView", "ColorSystem", "CFTimer", "Alignment"]
+    
+    
     var body: some View {
 
         ZStack {
             VStack {
-                Text("Hello World")
+                Picker(selection: $openIndex, label: Text("Please choose a color")) {
+                            ForEach(0 ..< colors.count) {
+                               Text(self.colors[$0])
+                                .font(Font.system(size: 32))
+                                
+                            }
+                         }
+                
+                Text("You selected: \(colors[openIndex])")
+                    .font(.largeTitle)
+                
                 Button(action: {
-                    //go to another view
-                    self.fTwoView.toggle()
+                    self.openView.toggle()
                 }) {
-                    Text("TwoViewResizeView")
-                        .font(.largeTitle)
-                        .fontWeight(.ultraLight)
-                }
-
-                Button(action: {
-                    //go to another view
-                    self.fTwoTapeView.toggle()
-                }) {
-                    Text("TwoViewResizeTapeView")
-                        .font(.largeTitle)
-                        .fontWeight(.ultraLight)
-                }
-
-                Button(action: {
-                    //go to another view
-                    self.animationView.toggle()
-                }) {
-                    Text("animationView")
+                    Text("Open")
                         .font(.largeTitle)
                         //.fontWeight(.ultraLight)
                 }
                 
+                VStack {
+                    Button(action: {}) {
+                        Text("Tap here")
+                    }
+                }.accentColor(.orange)
+                
+                
+                
                 Text("kk")
-                    .border(Color.black)
+                    .border(Color.red)
                     .background(
                         Color.yellow
                     )
                 
             }
             
-            if fTwoView {
-                BottomView(showMe : $fTwoView){
-                    TwoViewResizeView()
-                    //swiftuiAnimations()
+            if openView {
+                switch openIndex {
+                case 0: BottomView(showMe : $openView){TwoViewResizeView()}
+                case 1: BottomView(showMe : $openView){TwoViewResizeTapView()}
+                case 2:BottomView(showMe : $openView){swiftuiAnimations()}
+                case 3:BottomView(showMe : $openView){ColorISystemView()}
+                case 4:BottomView(showMe : $openView){CFTimerView()}
+                case 5:BottomView(showMe : $openView){AlignmentGuides()}
+                
+                default:
+                    BottomView(showMe : $openView){
+                        TwoViewResizeTapView()
+                        //swiftuiAnimations()
+                    }
                 }
             }
-            
-            if fTwoTapeView {
-                BottomView(showMe : $fTwoTapeView){
-                    TwoViewResizeTapView()
-                    //swiftuiAnimations()
-                }
-            }
-            
-            if animationView {
-                BottomView(showMe : $animationView){
-                    //TwoViewResizeView()
-                    swiftuiAnimations()
-                }
-            }
-            
-            
         
         }
-        
-
-        
         
         /*
         Text("Hello, World!")
@@ -109,7 +104,6 @@ struct ContentView: View {
     }
 }
 
-
 struct BottomView<Content: View>: View {
     @Binding var showMe : Bool
     
@@ -118,9 +112,15 @@ struct BottomView<Content: View>: View {
     
     var body: some View {
         ZStack {
+            Rectangle()
+                .fill(Color.white)
+            
+            //Rectangle() // background
+            //    .foregroundColor(Color.white)
+            
             content()
             Rectangle()
-                .fill(Color.orange)
+                .fill(Color.orange.opacity(0.3))
                 .frame(width: 50, height: 50)
                 .position(x: 25, y: 25)
                 .onTapGesture {
@@ -142,7 +142,6 @@ struct DragView: View {
         }
     }
 }
-
 
 struct MajidView : View {
     @State private var offset: CGSize = .zero
@@ -170,7 +169,6 @@ struct MajidView : View {
             .animation(.interactiveSpring())
     }
 }
-
 
 struct PersonView: View {
     var body: some View {
@@ -257,7 +255,6 @@ final class OrientationInfo: ObservableObject {
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -72,27 +72,27 @@ struct ListView: View {
         ScrollView {
         VStack (alignment: .leading) {
             Group {
-                Text("y a quelque chose dans son regard")
-                Text("non jamais je ne serais faits")
+                Text("+     35")
+                Text("+     22")
             }
             
             Group {
-                Text("mimim ")
-                Text("il usion")
+                Text("+     57")
+                Text("+    218")
             }
             
             
             Group {
-                Text("d'un peu fragile et de legere")
-            Text("1")
-            Text("2")
-            Text("3")
-                Text("toi mon ami aux yeux de soire")
-                Text("tu as souri mais hier je ne savais pas")
-                Text("elle me regard, je le sens bien")
-                Text("")
-                Text("comme un oisor")
-                Text("")
+                Text("+     11")
+                Text("+    188")
+                Text("+     77")
+                Text("+     2x5")
+                Text("+     17 x 2")
+                Text("+     65")
+                Text("+     90")
+                Text("+     71")
+                Text("+     65")
+                Text("+     88")
             }
             
         }
