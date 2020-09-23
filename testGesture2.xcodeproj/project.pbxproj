@@ -15,6 +15,8 @@
 		451E685F2509037D00846646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451E685D2509037D00846646 /* LaunchScreen.storyboard */; };
 		451E6867250A2F1F00846646 /* TwoViewResizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451E6866250A2F1F00846646 /* TwoViewResizeView.swift */; };
 		45349DBD251371D8000310DF /* AlignmentGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45349DBC251371D8000310DF /* AlignmentGuides.swift */; };
+		453518F8251B6595009E94E7 /* GeometryReaderToVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453518F7251B6594009E94E7 /* GeometryReaderToVar.swift */; };
+		4537D4ED2518C3C300B1E204 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4537D4EC2518C3C300B1E204 /* GeometryReaderView.swift */; };
 		453B0CA0250F86A20035CBE9 /* TwoViewResizeTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */; };
 		453F9C552517393F0097080B /* CFTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C542517393F0097080B /* CFTimerView.swift */; };
 		453F9C58251739520097080B /* HalfModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C57251739520097080B /* HalfModalView.swift */; };
@@ -33,6 +35,8 @@
 		451E68602509037D00846646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451E6866250A2F1F00846646 /* TwoViewResizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewResizeView.swift; sourceTree = "<group>"; };
 		45349DBC251371D8000310DF /* AlignmentGuides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuides.swift; sourceTree = "<group>"; };
+		453518F7251B6594009E94E7 /* GeometryReaderToVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderToVar.swift; sourceTree = "<group>"; };
+		4537D4EC2518C3C300B1E204 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewResizeTapView.swift; sourceTree = "<group>"; };
 		453F9C542517393F0097080B /* CFTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFTimerView.swift; sourceTree = "<group>"; };
 		453F9C57251739520097080B /* HalfModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalView.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				451E68522509037400846646 /* AppDelegate.swift */,
 				451E68542509037400846646 /* SceneDelegate.swift */,
 				451E68562509037400846646 /* ContentView.swift */,
+				4537D4EC2518C3C300B1E204 /* GeometryReaderView.swift */,
+				453518F7251B6594009E94E7 /* GeometryReaderToVar.swift */,
 				453F9C5A2518A9ED0097080B /* ColorISystemView.swift */,
 				45349DBC251371D8000310DF /* AlignmentGuides.swift */,
 				451E68582509037D00846646 /* Assets.xcassets */,
@@ -177,6 +183,7 @@
 			files = (
 				453B0CA0250F86A20035CBE9 /* TwoViewResizeTapView.swift in Sources */,
 				453F9C58251739520097080B /* HalfModalView.swift in Sources */,
+				4537D4ED2518C3C300B1E204 /* GeometryReaderView.swift in Sources */,
 				453F9C552517393F0097080B /* CFTimerView.swift in Sources */,
 				45349DBD251371D8000310DF /* AlignmentGuides.swift in Sources */,
 				451E6867250A2F1F00846646 /* TwoViewResizeView.swift in Sources */,
@@ -185,6 +192,7 @@
 				45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */,
 				451E68572509037400846646 /* ContentView.swift in Sources */,
 				453F9C5B2518A9ED0097080B /* ColorISystemView.swift in Sources */,
+				453518F8251B6595009E94E7 /* GeometryReaderToVar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
