@@ -29,7 +29,28 @@ struct TimeView2 : View { // no filter
         let minute = components.minute ?? 0
         let month = components.month ?? 0
         let seconds = components.second ?? 0
+        //print(components)
+        /*
+         calendar: gregorian (current) timeZone: Asia/Taipei (current) era: 1 year: 2020 month: 9 day: 25 hour: 9 minute: 37 second: 36 nanosecond: 998836994 weekday: 6 weekdayOrdinal: 4 quarter: 0 weekOfMonth: 4 weekOfYear: 39 yearForWeekOfYear: 2020 isLeapMonth: false
+         */
 
+        
+        let today = Date()
+        var components2 = Calendar.current.dateComponents(in: TimeZone.current, from: today)
+        print(components2)
+        // calendar: gregorian (current) timeZone: Asia/Taipei (current) era: 1 year: 2020 month: 9 day: 25 hour: 10 minute: 36 second: 16 nanosecond: 316977977 weekday: 6 weekdayOrdinal: 4 quarter: 0 weekOfMonth: 4 weekOfYear: 39 yearForWeekOfYear: 2020 isLeapMonth: false
+        
+        components2 = Calendar.current.dateComponents(in: TimeZone(identifier: "Europe/London")!, from: today)
+        print(components2)
+        // calendar: gregorian (fixed) timeZone: Europe/London (fixed) era: 1 year: 2020 month: 9 day: 25 hour: 3 minute: 36 second: 16 nanosecond: 316977977 weekday: 6 weekdayOrdinal: 4 quarter: 0 weekOfMonth: 4 weekOfYear: 39 yearForWeekOfYear: 2020 isLeapMonth: false
+        
+        components2.hour = 8                   // specific parts
+        components2.minute = 0
+        var date = Calendar.current.date(from: components2)
+        print(date)
+        // Optional(2020-09-25 07:00:16 +0000)
+
+        
         return VStack {
             
             Text("h \(hour) m \(minute)")
@@ -47,10 +68,14 @@ struct TimeView2 : View { // no filter
 struct TimeView : View { // now time with filter
     
     private func NowTimeData () -> some View {
-        let components = Calendar.current.dateComponents([.month, .hour, .minute], from: Date())
+        let components = Calendar.current.dateComponents([.year, .month, .hour, .minute, .second], from: Date())
         let hour = components.hour ?? 0
         let minute = components.minute ?? 0
         let month = components.month ?? 0
+        //print(components)
+        // year: 2020 month: 9 hour: 9 minute: 37 second: 37 isLeapMonth: false
+        //print(Date())
+        // 2020-09-25 01:37:37 +0000
 
         return VStack {
             

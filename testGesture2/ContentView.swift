@@ -27,8 +27,7 @@ struct ContentView: View {
     @State private var openIndex : Int = 0
     @State private var openView = false
     
-    var colors = ["TwoViewResizeView", "TwoViewResizeTapeView", "animationView", "ColorSystem", "CFTimer", "Alignment", "GeometryReaderView", "GeometryReader Var", "DateTime"]
-    
+    var colors = ["TwoViewResizeView", "TwoViewResizeTapeView", "animationView", "ColorSystem", "CFTimer", "Alignment", "GeometryReaderView", "GeometryReader Var", "DateTime", "Stack Alignment"]
     
     var body: some View {
 
@@ -59,8 +58,6 @@ struct ContentView: View {
                     }
                 }.accentColor(.orange)
                 
-                
-                
                 Text("kk")
                     .border(Color.red)
                     .background(
@@ -80,6 +77,7 @@ struct ContentView: View {
                 case 6:BottomView(showMe : $openView){GeometryReaderView()}
                 case 7:BottomView(showMe : $openView){GeometryReaderToVar()}
                 case 8:BottomView(showMe : $openView){DateTimeView()}
+                case 9:BottomView(showMe : $openView){StackAlignment()}
                 
                 default:
                     BottomView(showMe : $openView){

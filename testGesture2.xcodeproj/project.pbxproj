@@ -22,6 +22,7 @@
 		453F9C552517393F0097080B /* CFTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C542517393F0097080B /* CFTimerView.swift */; };
 		453F9C58251739520097080B /* HalfModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C57251739520097080B /* HalfModalView.swift */; };
 		453F9C5B2518A9ED0097080B /* ColorISystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C5A2518A9ED0097080B /* ColorISystemView.swift */; };
+		457B7A62251DC29D00C04AB8 /* StackAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B7A61251DC29D00C04AB8 /* StackAlignment.swift */; };
 		45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		453F9C542517393F0097080B /* CFTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFTimerView.swift; sourceTree = "<group>"; };
 		453F9C57251739520097080B /* HalfModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalView.swift; sourceTree = "<group>"; };
 		453F9C5A2518A9ED0097080B /* ColorISystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorISystemView.swift; sourceTree = "<group>"; };
+		457B7A61251DC29D00C04AB8 /* StackAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAlignment.swift; sourceTree = "<group>"; };
 		45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "advanced-swiftui-animations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 		451E68462509037400846646 = {
 			isa = PBXGroup;
 			children = (
+				457B7A61251DC29D00C04AB8 /* StackAlignment.swift */,
 				453F9C532517384D0097080B /* CFTimer */,
 				451E6866250A2F1F00846646 /* TwoViewResizeView.swift */,
 				453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */,
@@ -192,6 +195,7 @@
 				451E6867250A2F1F00846646 /* TwoViewResizeView.swift in Sources */,
 				451E68532509037400846646 /* AppDelegate.swift in Sources */,
 				453AC3CB251CCE4C00668025 /* DateTimeView.swift in Sources */,
+				457B7A62251DC29D00C04AB8 /* StackAlignment.swift in Sources */,
 				451E68552509037400846646 /* SceneDelegate.swift in Sources */,
 				45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */,
 				451E68572509037400846646 /* ContentView.swift in Sources */,
