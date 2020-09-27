@@ -23,6 +23,7 @@
 		453F9C58251739520097080B /* HalfModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C57251739520097080B /* HalfModalView.swift */; };
 		453F9C5B2518A9ED0097080B /* ColorISystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F9C5A2518A9ED0097080B /* ColorISystemView.swift */; };
 		457B7A62251DC29D00C04AB8 /* StackAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B7A61251DC29D00C04AB8 /* StackAlignment.swift */; };
+		457B7A662520A19E00C04AB8 /* alignment-guides-tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B7A652520A19E00C04AB8 /* alignment-guides-tool.swift */; };
 		45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		453F9C57251739520097080B /* HalfModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalView.swift; sourceTree = "<group>"; };
 		453F9C5A2518A9ED0097080B /* ColorISystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorISystemView.swift; sourceTree = "<group>"; };
 		457B7A61251DC29D00C04AB8 /* StackAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAlignment.swift; sourceTree = "<group>"; };
+		457B7A652520A19E00C04AB8 /* alignment-guides-tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "alignment-guides-tool.swift"; sourceTree = "<group>"; };
 		45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "advanced-swiftui-animations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		451E68512509037400846646 /* testGesture2 */ = {
 			isa = PBXGroup;
 			children = (
+				457B7A652520A19E00C04AB8 /* alignment-guides-tool.swift */,
 				451E68522509037400846646 /* AppDelegate.swift */,
 				451E68542509037400846646 /* SceneDelegate.swift */,
 				451E68562509037400846646 /* ContentView.swift */,
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453B0CA0250F86A20035CBE9 /* TwoViewResizeTapView.swift in Sources */,
+				457B7A662520A19E00C04AB8 /* alignment-guides-tool.swift in Sources */,
 				453F9C58251739520097080B /* HalfModalView.swift in Sources */,
 				4537D4ED2518C3C300B1E204 /* GeometryReaderView.swift in Sources */,
 				453F9C552517393F0097080B /* CFTimerView.swift in Sources */,
