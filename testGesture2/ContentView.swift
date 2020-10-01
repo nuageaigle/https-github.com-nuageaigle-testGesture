@@ -27,7 +27,7 @@ struct ContentView: View {
     @State private var openIndex : Int = 0
     @State private var openView = false
     
-    var colors = ["TwoViewResizeView", "TwoViewResizeTapeView", "animationView", "ColorSystem", "CFTimer", "Alignment", "GeometryReaderView", "GeometryReader Var", "DateTime", "Stack Alignment", "Alignment Guides Tool"]
+    var colors = ["TwoViewResizeView", "TwoViewResizeTapeView", "animationView", "ColorSystem", "CFTimer", "Alignment", "GeometryReaderView", "GeometryReader Var", "DateTime", "Stack Alignment", "Alignment Guides Tool", "Half Sheet"]
     
     var body: some View {
 
@@ -79,6 +79,7 @@ struct ContentView: View {
                 case 8:BottomView(showMe : $openView){DateTimeView()}
                 case 9:BottomView(showMe : $openView){StackAlignment()}
                 case 10:BottomView(showMe : $openView){alignmentGuides()}
+                case 11:BottomView(showMe : $openView){halfSheetView()}
                 
                 default:
                     BottomView(showMe : $openView){

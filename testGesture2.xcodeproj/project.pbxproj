@@ -25,6 +25,7 @@
 		457B7A62251DC29D00C04AB8 /* StackAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B7A61251DC29D00C04AB8 /* StackAlignment.swift */; };
 		457B7A662520A19E00C04AB8 /* alignment-guides-tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B7A652520A19E00C04AB8 /* alignment-guides-tool.swift */; };
 		45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */; };
+		45AE1F792526185C005DE3BD /* halfSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE1F782526185C005DE3BD /* halfSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		457B7A61251DC29D00C04AB8 /* StackAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAlignment.swift; sourceTree = "<group>"; };
 		457B7A652520A19E00C04AB8 /* alignment-guides-tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "alignment-guides-tool.swift"; sourceTree = "<group>"; };
 		45ACC41F250F6D6D0039E796 /* advanced-swiftui-animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "advanced-swiftui-animations.swift"; sourceTree = "<group>"; };
+		45AE1F782526185C005DE3BD /* halfSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = halfSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				457B7A61251DC29D00C04AB8 /* StackAlignment.swift */,
+				45AE1F782526185C005DE3BD /* halfSheetView.swift */,
 				453F9C532517384D0097080B /* CFTimer */,
 				451E6866250A2F1F00846646 /* TwoViewResizeView.swift */,
 				453B0C9F250F86A20035CBE9 /* TwoViewResizeTapView.swift */,
@@ -203,6 +206,7 @@
 				451E68552509037400846646 /* SceneDelegate.swift in Sources */,
 				45ACC420250F6D6D0039E796 /* advanced-swiftui-animations.swift in Sources */,
 				451E68572509037400846646 /* ContentView.swift in Sources */,
+				45AE1F792526185C005DE3BD /* halfSheetView.swift in Sources */,
 				453F9C5B2518A9ED0097080B /* ColorISystemView.swift in Sources */,
 				453518F8251B6595009E94E7 /* GeometryReaderToVar.swift in Sources */,
 			);
